@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Saleem Caravan Investments</string>
+    <string name="action_settings">Settings</string>
+    <string name="number_of_choices">Number of Choices</string>
+    <string name="number_of_questions">Number of Questions</string>
+    <string name="number_of_choices_description">Display 2, 4, 6 or 8 guess buttons</string>
+    <string name="number_of_choices_questions">Display 5, 10, or 15 quetions</string>
+    <string name="world_regions">Regions</string>
+    <string name="world_regions_description">Regions to include in the quiz</string>
+    <string name="guess_country">Guess the Country</string>
+    <string name="results">%1$d correct answers out of %2$d questions, %3$.02f%% correct</string>
+    <string name="incorrect_answer">Incorrect!</string>
+    <string name="default_region_message">One region must be selected. Setting North America as the default region.</string>
+    <string name="restarting_quiz">Quiz will restart with your new settings</string>
+    <string name="question">Question %1$d of %2$d</string>
+    <string name="reset_quiz">Reset Quiz</string>
+    <string name="image_description">Image of the current flag in the quiz</string>
+    <string name="default_region">North_America</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="todo">TODO</string>
+    <string name="loginins">Please enter userid and password!</string>
+    <string name="userId">User Id</string>
+    <string name="password">Password</string>
+    <string name="title_activity_login">Saleem Caravan Investments</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">User Id</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">This userid is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_client_list">Saleem Caravan Investments - Clients</string>
+    <string name="title_client_detail">Saleem Caravan Investments - Client Detail</string>
+    <string name="companytext">Company</string>
+    <string name="searchBtn">Search</string>
+    <string name="companyName">Company Name</string>
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="NumberOfInvoices">Number Of Invoices Unpaid</string>
+    <string name="Unpaid">Unpaid</string>
+    <string name="Invoices">Invoices</string>
+    <string name="createOrder">Create Order</string>
+    <string name="Customer">Customers</string>
+    <string name="addCustomer">Add Customer</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="postal">Postal Code</string>
+    <string name="street">Street Address</string>
+    <string name="unit">Unit</string>
+    <string name="city">City</string>
+    <string name="province">Province</string>
+    <string name="country">Country</string>
+    <string name="save">Save</string>
+    <string name="total">Total</string>
+    <string name="comments">Comments</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="to">To</string>
+    <string name="send">Send</string>
+    <string name="date">Date</string>
+    <string name="invoice_number">Invoice Number</string>
+    <string name="customer_label">Customer</string>
+    <string name="Product">Product</string>
+    <string name="quantity">Quantity</string>
+    <string name="rice">Saleem Caravan Rice</string>
+    <string name="tea">Saleem Caravan Tea</string>
+    <string name="place_order">Place Order</string>
+    <string name="date_required">Date is required.</string>
+    <string name="balanc">Balance</string>
+    <string name="required_total">Total *</string>
+    <string name="required_invoices">Invoice *</string>
+    <string name="email_address">Email Address</string>
+    <string name="company_inc">Company Inc.</string>
+    <string name="phone_format">000-000-0000</string>
+    <string name="email_tempate">something@domain.com</string>
+    <string name="postal_tempte">X1X 1X1</string>
+    <string name="street_address">1 Yonge St</string>
+    <string name="name_required">Name *</string>
+    <string name="Phone_required">Phone *</string>
+    <string name="Email_required">Email *</string>
+    <string name="add">Add</string>
+    <string name="Next" >Next</string>
+    <string name="remove">Remove</string>
+    <string name="checkout">Check Out</string>
+    <!--<string name="title_activity_settings">Settings<
+    /string>-->
+</resources>

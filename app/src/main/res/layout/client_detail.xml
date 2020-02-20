@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TableLayout
+
+        android:id="@+id/parenTbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GhostWhite"
+        android:gravity="fill_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/companyNameText"
+                android:layout_column="1"
+                style="@style/heading"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textIsSelectable="true" />
+            <TextView
+                android:id="@+id/lblCompanyName"
+
+                style="@style/heading"
+                android:visibility="invisible"
+
+                android:padding="3dip"
+                android:text="@string/companyName" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/PhoneLabel"
+
+                style="@style/labels"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/Phone" />
+
+            <TextView
+                android:id="@+id/PhoneText"
+
+
+                style="@style/labels"
+                android:gravity="right"
+
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/EmailLabel"
+                style="@style/labels"
+                android:layout_column="1"
+
+                android:padding="3dip"
+                android:text="@string/Email" />
+
+            <TextView
+                android:id="@+id/EmailText"
+
+                style="@style/labels"
+                android:gravity="right"
+
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/NumberOfInvoicesLabel"
+
+                style="@style/labels"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/NumberOfInvoices" />
+
+            <TextView
+                android:id="@+id/NumberOfInvoicesText"
+                style="@style/labels"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TotalUnpaidLabel"
+
+                style="@style/labels"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/balanc" />
+
+            <TextView
+                android:id="@+id/TotalUnpaidText"
+                style="@style/labels"
+
+                android:gravity="right"
+
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/InvoicesLabel"
+                style="@style/labels"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="@string/Invoices" />
+
+            <TextView
+                android:id="@+id/InvoicesText"
+                style="@style/labels"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <Button
+            android:id="@+id/btnSendInvoice"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:textColor="@color/button_text_color"
+            android:layout_height="match_parent"
+
+            android:text="Send Invoice"></Button>
+
+        <Button
+            android:id="@+id/btnPrintInvoice"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:textColor="@color/button_text_color"
+            android:layout_height="match_parent"
+            android:text="Print Invoice"></Button>
+
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:textColor="@color/button_text_color"
+            android:layout_height="match_parent"
+            android:text="Place Order"></Button>
+
+        <Button
+            android:id="@+id/btnMakePayment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:textColor="@color/button_text_color"
+            android:layout_height="match_parent"
+            android:text="Payment"></Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="false"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SendInvoiceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/lblTo"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="@string/email_address" />
+
+        <EditText
+            android:id="@+id/txtTo"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:minWidth="@dimen/email_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblComment"
+        style="@style/labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:text="@string/comments" />
+
+    <EditText
+        android:id="@+id/txtComments"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textMultiLine|textPersonName"
+        android:maxLines="4" />
+
+    <Button
+        android:id="@+id/btnSend"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:textColor="@color/button_text_color" />
+
+
+</LinearLayout>

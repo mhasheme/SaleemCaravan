@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".OrderFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtCompany"
+            style="@style/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TableLayout
+
+        android:id="@+id/parenTbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GhostWhite"
+        android:gravity="fill_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:stretchColumns="1">
+    <TableRow android:padding="4dp">
+        <Spinner
+            android:id="@+id/spProducts"
+            style="@android:style/Widget.DeviceDefault.Light.Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dropdown"
+            android:textAlignment="gravity" />
+
+        <EditText
+            android:id="@+id/txtQuantity"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="right"
+
+            android:width="@dimen/total_width"
+
+            android:hint="@string/quantity"
+            android:inputType="number" />
+    </TableRow>
+        <TableRow android:padding="4dp">
+            <TextView
+                android:id="@+id/lblProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+
+                style="@style/labels"
+                android:textAlignment="gravity" />
+
+            <TextView
+                android:id="@+id/lblQuantities"
+                style="@style/labels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_column="1"
+
+                android:width="@dimen/total_width"
+
+                />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+    >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:textColor="@color/button_text_color"
+            android:layout_height="match_parent"
+            android:text="@string/add"
+            />
+
+        <Button
+            android:id="@+id/btnRemove"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/remove"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btNext"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/checkout"
+            android:textColor="@color/button_text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

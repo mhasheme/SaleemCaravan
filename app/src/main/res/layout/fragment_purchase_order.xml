@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_padding"
+    tools:context=".PurchaseOrderFragment">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/txtCustomer"
+            style="@style/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/left_padding" />
+
+        <TextView
+            android:id="@+id/lblDate"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/left_padding"
+            android:text="@string/date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+        <EditText
+            android:id="@+id/txtDOP"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="MM/dd/yyyy"
+            android:inputType="date"
+            android:paddingLeft="@dimen/left_padding" />
+
+        <TextView
+            android:id="@+id/vldDate"
+            style="@style/TextAppearance.Design.Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            tools:text="@string/date_required"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lblInvoiceNumber"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/left_padding"
+            android:text="@string/invoice_number" />
+
+        <EditText
+            android:id="@+id/txtInvoiceNumber"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="000000"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/left_padding" />
+
+        <TextView
+            android:id="@+id/lblTotal"
+            style="@style/labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/left_padding"
+            android:text="@string/total" />
+
+        <EditText
+            android:id="@+id/txtTotal"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/total"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/left_padding" />
+
+        <TextView
+            android:id="@+id/lblComments"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/left_padding"
+            android:text="@string/comments" />
+
+        <EditText
+            android:id="@+id/txtComments"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/comments"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/left_padding" />
+
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:textColor="@color/button_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="@string/place_order" />
+    </LinearLayout>
+</LinearLayout>

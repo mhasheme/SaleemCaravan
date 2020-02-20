@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--<style name="AppTheme.AppBarOverlay." parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <!--<style name="AppTheme.PopupOverlay" parent="Base.ThemeOverlay.AppCompat.Light" />-->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="txtarea"></style>
+    <style name="labels" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="readonlyText" parent="@style/labels" >
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="recylerText" parent="@style/labels" >
+
+        <item name="android:textSize">17sp</item>
+        <item name="android:background"> @color/WhiteSmoke</item>
+    </style>
+
+
+    <style name="heading" parent="@style/labels" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="searchText" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="editText" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+</resources>

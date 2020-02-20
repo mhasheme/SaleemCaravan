@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createCustomerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".CreateCustomer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/companyNameLabel"
+                style="@style/labels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_required" />
+
+            <EditText
+                android:id="@+id/custName"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="@dimen/textInput"
+
+                android:ems="10"
+                android:hint="@string/company_inc"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PhoneLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Phone_required" />
+
+            <EditText
+                android:id="@+id/PhoneText"
+                style="@style/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="@dimen/textInput"
+                android:ems="10"
+                android:hint="@string/Phone"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/EmailLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Email_required" />
+
+            <EditText
+                android:id="@+id/EmailText"
+                style="@style/editText"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/streetAddressLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:text="@string/street"
+                tools:text="@string/street" />
+
+            <EditText
+                android:id="@+id/streetAddressText"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:hint="@string/street_address"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/UnitLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unit" />
+
+            <EditText
+                android:id="@+id/UnitText"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/unit"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PostalLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/postal" />
+
+            <EditText
+                android:id="@+id/PostalText"
+                style="@style/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/postal_tempte"
+                android:inputType="textPostalAddress" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/CityLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/city" />
+
+            <EditText
+                android:id="@+id/CityText"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/city"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/provinceLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/province" />
+
+            <Spinner
+                android:id="@+id/province"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="match_parent"
+                android:entries="@array/provinces_array"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/textInput"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/CountryLabel"
+                style="@style/labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/country" />
+
+            <Spinner
+                android:id="@+id/countryList"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dropDownWidth="match_parent"
+                android:entries="@array/countries_array"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="@dimen/create_customer"
+        android:layout_height="wrap_content"
+
+
+        android:layout_gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/button_text_color" />
+
+</LinearLayout>
