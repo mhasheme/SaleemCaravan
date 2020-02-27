@@ -31,6 +31,6 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".ClientListActivity"
+    tools:context="com.webbasedsolutions.scinvestments.ClientListActivity"
     tools:listitem="@layout/client_list_content" />
 </RelativeLayout>

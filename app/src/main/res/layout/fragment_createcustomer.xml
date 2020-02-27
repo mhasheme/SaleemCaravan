@@ -8,7 +8,7 @@
     android:layout_marginRight="10dp"
     android:orientation="vertical"
     android:visibility="visible"
-    tools:context=".CreateCustomer">
+    tools:context="com.webbasedsolutions.scinvestments.CreateCustomer">
 
     <LinearLayout
         android:layout_width="match_parent"

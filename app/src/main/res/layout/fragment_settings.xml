@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.map524s1a.scinvestments.SettingsActivityFragment"
+    tools:context="com.map524s1a.scinvestments.com.webbasedsolutions.scinvestments.SettingsActivityFragment"
     tools:showIn="@layout/activity_settings">
 
 </android.support.constraint.ConstraintLayout>

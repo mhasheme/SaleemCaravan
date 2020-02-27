@@ -28,7 +28,7 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context=".ClientListActivity">
+    tools:context="com.webbasedsolutions.scinvestments.ClientListActivity">
 
     <!--
     This layout is a two-pane layout for the Clients
@@ -45,7 +45,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:context="com.map524s1a.scinvestments.ClientListActivity"
+        tools:context="com.map524s1a.scinvestments.com.webbasedsolutions.scinvestments.ClientListActivity"
         tools:listitem="@layout/client_list_content" />
 
     <FrameLayout
