@@ -388,7 +388,7 @@ public class PurchaseOrderFragment extends Fragment {
                 message = responseBody;
                 if (Helpers.isJSONValid(responseBody)) {
                     try {
-                        message = new JSONObject(responseBody).getString("Message");
+                        message = new JSONObject(responseBody).getString("message");
                     } catch (JSONException ex) {
 
                     }

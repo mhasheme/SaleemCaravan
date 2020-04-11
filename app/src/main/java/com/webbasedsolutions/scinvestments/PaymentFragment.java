@@ -54,6 +54,7 @@ public class PaymentFragment extends Fragment implements ItemSelected {
     private Payment mItem;
     private TextView txtCompany;
     private EditText txtAmount;
+    private TextView txtAmountDue;
     private EditText txtIvoices;
     private EditText txtComments;
     private Button btnSave;
@@ -110,6 +111,7 @@ public class PaymentFragment extends Fragment implements ItemSelected {
         View rootView =  inflater.inflate(R.layout.payment_fragment, container, false);
         txtCompany = (TextView)rootView.findViewById(R.id.txtCompanyName);
         txtAmount = (EditText) rootView.findViewById(R.id.txtTotal);
+        txtAmountDue = (TextView) rootView.findViewById(R.id.txtTotalDue);
         txtAmount.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
@@ -142,6 +144,8 @@ public class PaymentFragment extends Fragment implements ItemSelected {
            // txtAmount.setText(String.valueOf(mItem.getAmount()));
             //txtIvoices.setText(mItem.getInvoiceNumber());
             txtComments.setText(mItem.getComments());
+
+            txtAmountDue.setText(Helpers.formatDecimal((float) mItem.getAmount()));
         }
 
         spinner = (Spinner) rootView.findViewById(R.id.spinner);

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Settings extends Application {
 
-    private String ip = "192.168.0.20";
+    private String ip = "172.28.6.80d";
     private String appName = "SalCApi";
     private String protocol = "http";
     private String securityToken = "";

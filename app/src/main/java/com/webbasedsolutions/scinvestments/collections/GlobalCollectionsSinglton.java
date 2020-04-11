@@ -487,7 +487,7 @@ public class GlobalCollectionsSinglton implements ItemsLoaded  {
                 message = responseBody;
                 if (Helpers.isJSONValid(responseBody)) {
                     try {
-                        message = new JSONObject(responseBody).getString("Message");
+                        message = new JSONObject(responseBody).getString("message");
                     } catch (JSONException ex) {
                         Log.e(Tag, "Error diplaying error: " + ex.getMessage());
                     }

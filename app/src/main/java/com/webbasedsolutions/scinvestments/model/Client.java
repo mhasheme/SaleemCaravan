@@ -78,7 +78,7 @@ public class Client {
         NumberOfInvoices = numberOfInvoices;
     }
 
-    public Client(int id, String name, String email, String phone, String invoices, int numberOfInvoices, double totalUnpaid) {
+    public Client(int id, String name, String phone, String email,  String invoices, int numberOfInvoices, double totalUnpaid) {
         this.Id = id;
         this.Name = name;
         this.Email = email;

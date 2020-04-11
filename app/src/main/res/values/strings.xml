@@ -21,7 +21,7 @@
     <string name="loginins">Please enter userid and password!</string>
     <string name="userId">User Id</string>
     <string name="password">Password</string>
-    <string name="title_activity_login">Saleem Caravan Investments</string>
+    <string name="title_activity_login">Saleem Caravan Investments - POS</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">User Id</string>
@@ -35,8 +35,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="title_client_list">Saleem Caravan Investments - Clients</string>
-    <string name="title_client_detail">Saleem Caravan Investments - Client Detail</string>
+    <string name="title_client_list">Saleem Caravan Investments - POS</string>
+    <string name="title_client_detail">Saleem Caravan Investments - POS</string>
     <string name="companytext">Company</string>
     <string name="searchBtn">Search</string>
     <string name="companyName">Company Name</string>
@@ -91,6 +91,8 @@
     <string name="Next" >Next</string>
     <string name="remove">Remove</string>
     <string name="checkout">Check Out</string>
+    <string name="total_due">Total Due</string>
+    <string name="copy_righ"><![CDATA[Copyright \u00a9 2020 Saleem Caravan Investments Developed by Web Based Solutions]]></string>
     <!--<string name="title_activity_settings">Settings<
     /string>-->
 </resources>
